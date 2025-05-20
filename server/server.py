@@ -23,7 +23,7 @@ procs = []
 # load config variables from .env file
 load_dotenv()
 models_path = os.getenv("models_path")
-PORT = os.getenv("port")
+PORT = int(os.getenv("port"))
 
 try:
     n_jobs = int(os.getenv("n_jobs"))
