@@ -8,8 +8,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 5123
 
-ENV PORT=8991
+ENV PORT=5123
 
 CMD ["python3", "server.py"]
